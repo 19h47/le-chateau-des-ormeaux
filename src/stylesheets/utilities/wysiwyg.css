@@ -1,0 +1,32 @@
+/**
+ * Wysiwyg
+ *
+ * @package WordPress
+ * @subpackage LeChateauDesOrmeaux
+ */
+
+@layer utilities {
+	.wysiwyg {
+	}
+
+	.wysiwyg > *:first-child {
+		@apply mt-0;
+	}
+
+	.wysiwyg > *:last-child {
+		@apply mb-0;
+	}
+
+	.wysiwyg > p {
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+
+	.wysiwyg b,
+	.wysiwyg strong {
+		font-weight: 700;
+	}
+
+	.wysiwyg h2 {
+	}
+}

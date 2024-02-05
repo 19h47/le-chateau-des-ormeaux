@@ -1,0 +1,11 @@
+/*
+ * Button
+ *
+ * @package WordPress
+ * @subpackage LeChateauDesOrmeaux
+ */
+
+@layer components {
+	.button {
+	}
+}

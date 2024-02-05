@@ -1,0 +1,70 @@
+/**
+ * Base
+ *
+ * @package LeChateauDesOrmeaux
+ * @author Jérémy Levron <jeremylevron@19h47.fr> (https://19h47.fr)
+ */
+
+@tailwind base;
+
+@layer base {
+	/* PT Serif */
+	/* @font-face {
+		font-family: 'PT Serif';
+		src: url('../fonts/pt-serif/regular.woff2') format('woff2');
+		font-weight: 400;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'PT Serif';
+		src: url('../fonts/pt-serif/bold.woff2') format('woff2');
+		font-weight: 700;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Archer Pro';
+		src: url('../fonts/archer-pro/light.woff2') format('woff2');
+		font-weight: 300;
+		font-style: normal;
+		font-display: swap;
+	} */
+
+	*,
+	::after,
+	::before {
+		--base-font-size-unitless: 16;
+		--prototype-width-unitless: 1920;
+		-webkit-tap-highlight-color: transparent;
+	}
+
+	/* strong,
+	b {} */
+
+	@screen prototype {
+		html {
+			font-size: calc(
+				var(--base-font-size-unitless) * 100vw / var(--prototype-width-unitless)
+			);
+		}
+	}
+
+	svg {
+		fill: currentColor;
+	}
+
+	html.js {
+		opacity: 0;
+	}
+
+	html.is-first-load {
+		opacity: 1;
+	}
+
+	body {
+		@apply font-serif;
+	}
+}

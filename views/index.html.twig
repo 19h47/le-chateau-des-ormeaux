@@ -1,0 +1,76 @@
+{#
+ # Index
+ #
+ # @package WordPress
+ # @subpackage LeChateauDesOrmeaux
+ # @author Jérémy Levron <jeremylevron@19h47.fr> (https://19h47.fr)
+ #}
+<!DOCTYPE html>
+<html
+    itemscope
+    itemtype="http://schema.org/WebPage"
+    {{ html_class( 'no-js no-touch is-loading is-ontop' ) }}
+    {{ site.language_attributes }}
+>
+
+	<head>
+
+		<meta charset="{{ site.charset }}">
+		<link rel="profile" href="http://gmpg.org/xfn/11">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5,viewport-fit=cover">
+		<meta name="format-detection" content="telephone=no">
+
+		{{ function( 'wp_head' ) }}
+
+	</head>
+
+	<body class="cursor-wait">
+
+		<div id="{{ post.id ? "page-#{post.id}" : 'page' }}" {{ body_class( 'page-content relative overflow-hidden' ) }}  data-module-scroll="main">
+
+			{% block header %}
+				{{- include( 'header.html.twig', { classes: [ '' ] } ) -}}
+			{% endblock %}
+
+			{% block content %}
+				<main>
+
+					{%- if post.content -%}
+						<div class="">
+							<div class="container">
+								<div class="row">
+									<div class="lg:col-10/12 lg:ml-1/12">
+										<h1
+											class="{{ html_classes( 'text-[1.375rem] lg:text-[2.75rem] prototype:text-[5.5rem] leading-none tracking-[-0.025em]' ) }}"
+										>{{- post.title -}}</h1>
+									</div>
+
+									{%- if post.content -%}
+										<div class="lg:col-10/12 lg:ml-1/12 wysiwyg mt-8 text-[0.5625rem] lg:text-[1.125rem] prototype:text-[1.5rem]">
+											{{- post.content -}}
+										</div>
+									{%- endif -%}
+								</div>
+							</div>
+						</div>
+					{%- endif -%}
+
+					{{- include( 'blocks/blocks.html.twig', { blocks: post.meta( 'blocks' ), classes: [ 'relative z-2' ] } ) -}}
+
+				</main>
+			{% endblock %}
+
+
+			{% block footer %}{{- include( 'footer.html.twig' ) -}}{%- endblock -%}
+
+		</div>
+
+
+		{{ function( 'wp_footer' ) }}
+
+		<div id="svg-sprite" style="display: none;">{{- include( 'icons.svg', ignore_missing = true ) -}}</div>
+
+	</body>
+
+</html>
