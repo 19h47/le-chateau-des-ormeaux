@@ -1,17 +1,17 @@
 {
-	"name": "@19h47/lechateaudesormeaux",
+	"name": "@19h47/le-chateau-des-ormeaux",
 	"version": "0.0.1",
 	"description": "WordPress Theme",
 	"keywords": [
 		"ES6"
 	],
-	"homepage": "https://github.com/19h47/lechateaudesormeaux/blob/master/README.md",
+	"homepage": "https://github.com/19h47/le-chateau-des-ormeaux/blob/master/README.md",
 	"bugs": {
-		"url": "https://github.com/19h47/lechateaudesormeaux/issues"
+		"url": "https://github.com/19h47/le-chateau-des-ormeaux/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/19h47/lechateaudesormeaux.git"
+		"url": "git+https://github.com/19h47/le-chateau-des-ormeaux.git"
 	},
 	"license": "ISC",
 	"author": "Jérémy Levron <jeremylevron@19h47.fr> (https://19h47.fr)",
