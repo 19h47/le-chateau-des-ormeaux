@@ -8,31 +8,6 @@
 @tailwind base;
 
 @layer base {
-	/* PT Serif */
-	/* @font-face {
-		font-family: 'PT Serif';
-		src: url('../fonts/pt-serif/regular.woff2') format('woff2');
-		font-weight: 400;
-		font-style: normal;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: 'PT Serif';
-		src: url('../fonts/pt-serif/bold.woff2') format('woff2');
-		font-weight: 700;
-		font-style: normal;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: 'Archer Pro';
-		src: url('../fonts/archer-pro/light.woff2') format('woff2');
-		font-weight: 300;
-		font-style: normal;
-		font-display: swap;
-	} */
-
 	*,
 	::after,
 	::before {
@@ -62,9 +37,5 @@
 
 	html.is-first-load {
 		opacity: 1;
-	}
-
-	body {
-		@apply font-serif;
 	}
 }

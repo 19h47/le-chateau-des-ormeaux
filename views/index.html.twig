@@ -25,9 +25,9 @@
 
 	</head>
 
-	<body class="cursor-wait">
+	<body class="cursor-wait font-body">
 
-		<div id="{{ post.id ? "page-#{post.id}" : 'page' }}" {{ body_class( 'page-content relative overflow-hidden' ) }}  data-module-scroll="main">
+		<div id="{{ post.id ? "page-#{post.id}" : 'page' }}" {{ body_class( 'page-content relative overflow-hidden' ) }}>
 
 			{% block header %}
 				{{- include( 'header.html.twig', { classes: [ '' ] } ) -}}
@@ -37,21 +37,21 @@
 				<main>
 
 					{%- if post.content -%}
-						<div class="">
+
 							<div class="container">
-								<div class="row">
-									<div class="lg:col-10/12 lg:ml-1/12">
+
+
 										<h1
-											class="{{ html_classes( 'text-[1.375rem] lg:text-[2.75rem] prototype:text-[5.5rem] leading-none tracking-[-0.025em]' ) }}"
+											class="{{ html_classes( '' ) }}"
 										>{{- post.title -}}</h1>
-									</div>
+
 
 									{%- if post.content -%}
-										<div class="lg:col-10/12 lg:ml-1/12 wysiwyg mt-8 text-[0.5625rem] lg:text-[1.125rem] prototype:text-[1.5rem]">
+										<div class="">
 											{{- post.content -}}
 										</div>
 									{%- endif -%}
-								</div>
+
 							</div>
 						</div>
 					{%- endif -%}

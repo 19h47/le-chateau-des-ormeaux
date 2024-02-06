@@ -1,7 +1,18 @@
 const plugin = require('tailwindcss/plugin');
 const { fontFamily, screens } = require('tailwindcss/defaultTheme');
 
-const colors = {};
+const colors = {
+	gray: {
+		'very-light': '#ededed',
+		'very-light-mostly-white': '#fefefe'
+	},
+	yellow: {
+		'dark-moderate': '#6b7e27'
+	},
+	orange: {
+		soft: '#d9a658'
+	}
+};
 
 const fontSize = {};
 
@@ -39,10 +50,13 @@ const borderRadius = {};
 
 module.exports = {
 	content: ['./views/**/*.twig', './src/**/*.{html,js}', './includes/**/*.{php,json}'],
-	corePlugins: {
-		container: false,
-	},
 	theme: {
+
+		container: {
+			center: true,
+			padding: '1.5rem',
+		},
+
 		screens: {
 			prototype: '1920px',
 			...screens,
@@ -72,7 +86,8 @@ module.exports = {
 			zIndex,
 		},
 		fontFamily: {
-			serif: ['"PT Serif"', ...fontFamily.serif],
+			body: ['"Montserrat"', ...fontFamily.sans],
+			heading: ['"EB Garamond"', ...fontFamily.serif],
 		},
 	},
 	plugins: [

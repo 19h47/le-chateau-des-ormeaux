@@ -1,0 +1,390 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Le château des Ormeaux\n"
+"POT-Creation-Date: 2024-02-06 11:18+0100\n"
+"PO-Revision-Date: 2024-02-06 11:19+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: node_modules\n"
+"X-Poedit-SearchPathExcluded-2: vendor\n"
+"X-Poedit-SearchPathExcluded-3: dist\n"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oups ! Cette page est introuvable."
+
+#: 404.php:18
+msgid "It looks like nothing was found at this location."
+msgstr "On dirait que rien n'a été trouvé à cet endroit."
+
+#: includes/Plugins/ACF/Admin/Init.php:32
+msgid "Theme Settings"
+msgstr "Paramètres du thème"
+
+#: includes/Plugins/ACF/Fields/BlocksFields.php:50
+msgid "Blocks Fields"
+msgstr "Champs de blocs"
+
+#: includes/Plugins/ACF/Fields/ThemeSettingsFields.php:50
+msgid "Theme Settings Fields"
+msgstr "Champs des paramètres du thème"
+
+#: includes/Post/Cottage.php:98
+msgid "Thumbnail"
+msgstr "Image mise en avant"
+
+#. translators: Publish box date format, see https://secure.php.net/date
+#: includes/Post/Cottage.php:154
+msgid "M j, Y @ H:i"
+msgstr "F j, Y @ H:i"
+
+#: includes/Post/Cottage.php:159 includes/Post/Cottage.php:243
+msgid "View Cottage"
+msgstr ""
+
+#: includes/Post/Cottage.php:165 includes/Post/Cottage.php:171
+msgid "Preview Cottage"
+msgstr ""
+
+#: includes/Post/Cottage.php:176 includes/Post/Cottage.php:179
+#: includes/Post/Cottage.php:263
+msgid "Cottage updated."
+msgstr ""
+
+#: includes/Post/Cottage.php:177
+msgid "Custom field updated."
+msgstr ""
+
+#: includes/Post/Cottage.php:178
+msgid "Custom field deleted."
+msgstr ""
+
+#. translators: %s: date and time of the revision
+#: includes/Post/Cottage.php:181
+#, php-format
+msgid "Cottage restored to revision from %s."
+msgstr ""
+
+#: includes/Post/Cottage.php:182 includes/Post/Cottage.php:259
+msgid "Cottage published."
+msgstr ""
+
+#: includes/Post/Cottage.php:183
+msgid "Cottage saved."
+msgstr ""
+
+#: includes/Post/Cottage.php:184
+msgid "Cottage submitted."
+msgstr ""
+
+#: includes/Post/Cottage.php:185
+#, php-format
+msgid "Cottage scheduled for: %s."
+msgstr ""
+
+#: includes/Post/Cottage.php:186
+msgid "Cottage draft updated."
+msgstr ""
+
+#. translators: %s: Number of cottages.
+#: includes/Post/Cottage.php:212
+#, php-format
+msgid "%s cottage updated."
+msgid_plural "%s cottages updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Post/Cottage.php:213
+msgid "1 cottage not updated, somebody is editing it."
+msgstr ""
+
+#. translators: %s: Number of cottages.
+#: includes/Post/Cottage.php:215
+#, php-format
+msgid "%s cottage not updated, somebody is editing it."
+msgid_plural "%s cottages not updated, somebody is editing them."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: Number of cottages.
+#: includes/Post/Cottage.php:217
+#, php-format
+msgid "%s cottage permanently deleted."
+msgid_plural "%s cottage permanently deleted."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: Number of cottages..
+#: includes/Post/Cottage.php:219
+#, php-format
+msgid "%s cottage moved to the Trash."
+msgid_plural "%s cottage moved to the Trash."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: Number of cottages.
+#: includes/Post/Cottage.php:221
+#, php-format
+msgid "%s cottage restored from the Trash."
+msgid_plural "%s cottage restored from the Trash."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Post/Cottage.php:236
+msgctxt "cttage type generale name"
+msgid "Cottages"
+msgstr "Gîtes"
+
+#: includes/Post/Cottage.php:237
+msgctxt "cttage type singular name"
+msgid "Cottage"
+msgstr "Gîte"
+
+#: includes/Post/Cottage.php:238
+msgctxt "cttage type"
+msgid "Add New"
+msgstr "Ajouter"
+
+#: includes/Post/Cottage.php:239
+msgid "Add New Cottage"
+msgstr ""
+
+#: includes/Post/Cottage.php:240
+msgid "Edit Cottage"
+msgstr ""
+
+#: includes/Post/Cottage.php:241
+msgid "New Cottage"
+msgstr ""
+
+#: includes/Post/Cottage.php:242
+msgid "View Cottages"
+msgstr ""
+
+#: includes/Post/Cottage.php:244
+msgid "Search Cottages"
+msgstr ""
+
+#: includes/Post/Cottage.php:245
+msgid "No cottages found."
+msgstr ""
+
+#: includes/Post/Cottage.php:246
+msgid "No cottages found in Trash."
+msgstr ""
+
+#: includes/Post/Cottage.php:247
+msgid "Parent Cottage:"
+msgstr ""
+
+#: includes/Post/Cottage.php:248
+msgid "All Cottages"
+msgstr "Tous les gîtes"
+
+#: includes/Post/Cottage.php:249
+msgid "Cottage Archives"
+msgstr ""
+
+#: includes/Post/Cottage.php:250
+msgid "Cottage Attributes"
+msgstr ""
+
+#: includes/Post/Cottage.php:251
+msgid "Insert into cottage"
+msgstr ""
+
+#: includes/Post/Cottage.php:252
+msgid "Uploaded to this cottage"
+msgstr ""
+
+#: includes/Post/Cottage.php:253
+msgctxt "cottage"
+msgid "Featured Image"
+msgstr ""
+
+#: includes/Post/Cottage.php:254
+msgctxt "cottage"
+msgid "Set featured image"
+msgstr ""
+
+#: includes/Post/Cottage.php:255
+msgctxt "cottage"
+msgid "Remove featured image"
+msgstr ""
+
+#: includes/Post/Cottage.php:256
+msgctxt "cottage"
+msgid "Use as featured image"
+msgstr ""
+
+#: includes/Post/Cottage.php:257
+msgid "Cottages list navigation"
+msgstr ""
+
+#: includes/Post/Cottage.php:258
+msgid "Cottages list"
+msgstr ""
+
+#: includes/Post/Cottage.php:260
+msgid "Cottage published privately."
+msgstr ""
+
+#: includes/Post/Cottage.php:261
+msgid "Cottage reverted to draft."
+msgstr ""
+
+#: includes/Post/Cottage.php:262
+msgid "Cottage scheduled."
+msgstr ""
+
+#: includes/Post/Cottage.php:272
+msgid "Cottage"
+msgstr "Gîte"
+
+#: includes/Setup/Enqueue.php:78
+msgctxt "messages"
+msgid "Please fill out this field."
+msgstr "Veuillez remplir ce champ."
+
+#: includes/Setup/Enqueue.php:81
+msgctxt "messages"
+msgid "Please enter an email address."
+msgstr "Veuillez entrer une adresse email."
+
+#: includes/Setup/Enqueue.php:82
+msgctxt "messages"
+msgid "Please enter a URL."
+msgstr "Veuillez entrer une URL."
+
+#: includes/Setup/Enqueue.php:83
+msgctxt "messages"
+msgid "Please match the expected format."
+msgstr "Veuillez correspondre au format attendu."
+
+#: includes/Setup/NavMenu.php:38
+msgid "Main Menu"
+msgstr "Menu principal"
+
+#: includes/Setup/NavMenu.php:39
+msgid "Footer Menu"
+msgstr "Menu pied de page"
+
+#: includes/Setup/Settings.php:43
+#, php-format
+msgid "%s Public Email Address"
+msgstr "Adresse email publique %s"
+
+#: includes/Setup/Settings.php:49
+msgid "Email"
+msgstr "Email"
+
+#: includes/Setup/Settings.php:50
+msgid "This email address is used for public purposes."
+msgstr ""
+
+#: includes/Setup/Settings.php:57
+#, php-format
+msgid "%s Phone Number"
+msgstr "Numéro de téléphone %s"
+
+#: includes/Setup/Settings.php:63
+msgid "Phones Numbers"
+msgstr ""
+
+#: includes/Setup/Settings.php:65
+msgid ""
+"Theses phones numbers are used for public purposes. Separate phones numbers "
+"with commas"
+msgstr ""
+
+#: includes/Setup/Settings.php:71
+#, php-format
+msgid "%s Address"
+msgstr "Adresse postale %s"
+
+#: includes/Setup/Settings.php:80
+msgid "This address is used for public purposes."
+msgstr "Cette adresse est utilisée à des fins publiques."
+
+#: includes/Setup/Settings.php:81
+msgid "Address"
+msgstr "Adresse postale"
+
+#: includes/Setup/Settings.php:95 includes/Setup/Theme.php:89
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: includes/Setup/Settings.php:103
+msgid "Enter the LinkedIn URL here."
+msgstr "Indiquer l’URL du compte LinkedIn."
+
+#: includes/Setup/Settings.php:109 includes/Setup/Theme.php:70
+msgid "Instagram"
+msgstr "Instagram"
+
+#: includes/Setup/Settings.php:117
+msgid "Enter the Instagram URL here."
+msgstr "Indiquer l’URL du compte Instagram."
+
+#: includes/Setup/Theme.php:62
+msgid "Facebook"
+msgstr "Facebook"
+
+#: includes/Setup/Theme.php:64
+msgid "Share on Facebook"
+msgstr "Partager sur Facebook"
+
+#: includes/Setup/Theme.php:75
+msgid "YouTube"
+msgstr "YouTube"
+
+#: includes/Setup/Theme.php:81
+msgid "Twitter"
+msgstr "Twitter"
+
+#: includes/Setup/Theme.php:83
+msgid "Share on Twitter"
+msgstr "Partager sur Twitter"
+
+#: includes/Setup/Theme.php:91
+msgid "Share on LinkedIn"
+msgstr "Partagez sur LinkedIn"
+
+#: views/header.html.twig:17 views/pages/front-page.html.twig:22
+msgid "Contact"
+msgstr "Contact"
+
+#. Theme Name of the plugin/theme
+msgid "Le château des Ormeaux"
+msgstr "Le château des Ormeaux"
+
+#. Theme URI of the plugin/theme
+msgid "https://github.com/19h47/le-chateau-des-ormeaux/"
+msgstr "https://github.com/19h47/le-chateau-des-ormeaux/"
+
+#. Description of the plugin/theme
+msgid "WordPress Theme for Le château des Ormeaux"
+msgstr "Thème WordPress pour Le château des Ormeaux"
+
+#. Author of the plugin/theme
+msgid "Jérémy Levron"
+msgstr "Jérémy Levron"
+
+#. Author URI of the plugin/theme
+msgid "https://19h47.fr/"
+msgstr "https://19h47.fr/"

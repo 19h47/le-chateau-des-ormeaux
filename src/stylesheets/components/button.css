@@ -7,5 +7,6 @@
 
 @layer components {
 	.button {
+		@apply border-current border-4 rounded-full text-xl text-center font-semibold uppercase px-12 max-w-full py-1.5 inline-flex justify-center
 	}
 }

@@ -35,9 +35,9 @@ class NavMenu {
 	public function register_menus(): void {
 		register_nav_menus(
 			array(
-				'main_left'  => __( 'Main Left Menu', 'le-chateau-des-ormeaux' ),
-				'main_right' => __( 'Main Right Menu', 'le-chateau-des-ormeaux' ),
-				'footer'     => __( 'Footer Menu', 'le-chateau-des-ormeaux' ),
+				'main'   => __( 'Main Menu', 'le-chateau-des-ormeaux' ),
+				'footer' => __( 'Footer Menu', 'le-chateau-des-ormeaux' ),
+				'legals' => __( 'Legals Menu', 'le-chateau-des-ormeaux' ),
 			)
 		);
 	}

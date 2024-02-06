@@ -89,15 +89,6 @@ class Twig {
 			)
 		);
 
-		$twig->addFunction(
-			new TwigFunction(
-				'set_product_global',
-				function ( $post ) {
-					return set_product_global( $post );
-				}
-			)
-		);
-
 		if ( function_exists( 'sanitize_title' ) ) {
 			$twig->addFunction(
 				new TwigFunction(
@@ -162,12 +153,24 @@ class Twig {
 			);
 		}
 
+		// Polylang.
 		if ( function_exists( 'pll_the_languages' ) ) {
 			$twig->addFunction(
 				new TwigFunction(
 					'pll_the_languages',
 					function ( array $args = array( 'raw' => 1 ) ) {
 						return pll_the_languages( $args );
+					}
+				)
+			);
+		}
+
+		if ( function_exists( 'pll_current_language' ) ) {
+			$twig->addFunction(
+				new TwigFunction(
+					'pll_current_language',
+					function () {
+						return pll_current_language( $value );
 					}
 				)
 			);

@@ -37,33 +37,51 @@ class Settings {
 			'reading'
 		);
 
-		add_settings_field(
-			'public_email',
-			__( 'Public Email Address', 'le-chateau-des-ormeaux' ),
-			array( $this, 'email_callback_function' ),
-			'reading',
-			'contacts',
-			array(
-				'name'        => 'public_email',
-				'label'       => __( 'Email', 'le-chateau-des-ormeaux' ),
-				'description' => __( 'This email address is used for public purposes.', 'le-chateau-des-ormeaux' ),
-				'placeholder' => 'artvandelay@vandelayindustries.com',
-			)
-		);
+		foreach ( pll_the_languages( array( 'raw' => 1 ) ) as $language ) {
+			add_settings_field(
+				'public_email_' . $language['slug'],
+				sprintf( __( '%s Public Email Address', 'le-chateau-des-ormeaux' ), $language['name'] ),
+				array( $this, 'email_callback_function' ),
+				'reading',
+				'contacts',
+				array(
+					'name'        => 'public_email_' . $language['slug'],
+					'label'       => __( 'Email', 'le-chateau-des-ormeaux' ),
+					'description' => __( 'This email address is used for public purposes.', 'le-chateau-des-ormeaux' ),
+					'placeholder' => 'artvandelay@vandelayindustries.com',
+				)
+			);
 
-		add_settings_field(
-			'phones_numbers',
-			__( 'Phone Number', 'le-chateau-des-ormeaux' ),
-			array( $this, 'text_callback_function' ),
-			'reading',
-			'contacts',
-			array(
-				'name'        => 'phones_numbers',
-				'label'       => __( 'Phones Numbers', 'le-chateau-des-ormeaux' ),
-				'placeholder' => '087 123 4567, 087 123 4567',
-				'description' => __( 'Theses phones numbers are used for public purposes. Separate phones numbers with commas', 'le-chateau-des-ormeaux' ),
-			)
-		);
+			add_settings_field(
+				'phones_numbers_' . $language['slug'],
+				sprintf( __( '%s Phone Number', 'le-chateau-des-ormeaux' ), $language['name'] ),
+				array( $this, 'text_callback_function' ),
+				'reading',
+				'contacts',
+				array(
+					'name'        => 'phones_numbers_' . $language['slug'],
+					'label'       => __( 'Phones Numbers', 'le-chateau-des-ormeaux' ),
+					'placeholder' => '087 123 4567, 087 123 4567',
+					'description' => __( 'Theses phones numbers are used for public purposes. Separate phones numbers with commas', 'le-chateau-des-ormeaux' ),
+				)
+			);
+
+			add_settings_field(
+				'address_' . $language['slug'],
+				sprintf( __( '%s Address', 'le-chateau-des-ormeaux' ), $language['name'] ),
+				array( $this, 'textarea_callback_function' ),
+				'reading',
+				'default',
+				array(
+					'id'          => 'address_' . $language['slug'],
+					'name'        => 'address_' . $language['slug'],
+					'rows'        => 3,
+					'value'       => get_option( 'address_' . $language['slug'] ),
+					'description' => __( 'This address is used for public purposes.', 'le-chateau-des-ormeaux' ),
+					'placeholder' => __( 'Address', 'le-chateau-des-ormeaux' ),
+				)
+			);
+		}
 
 		add_settings_section(
 			'socials',
@@ -97,22 +115,6 @@ class Settings {
 				'name'        => 'instagram',
 				'placeholder' => 'https://instagram.com/artvandelay',
 				'description' => __( 'Enter the Instagram URL here.', 'le-chateau-des-ormeaux' ),
-			)
-		);
-
-		add_settings_field(
-			'address',
-			__( 'Address', 'le-chateau-des-ormeaux' ),
-			array( $this, 'textarea_callback_function' ),
-			'reading',
-			'default',
-			array(
-				'id'          => 'address',
-				'name'        => 'address',
-				'rows'        => 2,
-				'value'       => get_option( 'address' ),
-				'description' => __( 'This address is used for public purposes.', 'le-chateau-des-ormeaux' ),
-				'placeholder' => __( 'Address', 'le-chateau-des-ormeaux' ),
 			)
 		);
 	}
@@ -257,8 +259,10 @@ class Settings {
 			register_setting( 'general', $setting, $args );
 		}
 
-		register_setting( 'reading', 'public_email' );
-		register_setting( 'reading', 'phones_numbers' );
-		register_setting( 'reading', 'address' );
+		foreach ( pll_the_languages( array( 'raw' => 1 ) ) as $language ) {
+			register_setting( 'reading', 'public_email_' . $language['slug'] );
+			register_setting( 'reading', 'phones_numbers_' . $language['slug'] );
+			register_setting( 'reading', 'address_' . $language['slug'] );
+		}
 	}
 }
