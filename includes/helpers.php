@@ -60,7 +60,7 @@ function html_class( $class = '' ): string {
  */
 function get_webfonts(): array {
 	return array(
-		'eb-garamond' => '//fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&display=swap',
+		'eb-garamond' => '//fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500;0,700&display=swap',
 		'montserrat'  => '//fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap',
 	);
 }

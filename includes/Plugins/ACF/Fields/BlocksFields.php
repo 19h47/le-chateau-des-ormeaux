@@ -28,7 +28,7 @@ class BlocksFields {
 	 */
 	public function fields() {
 		$key            = 'blocks';
-		$hide_on_screen = array( 'the_content' );
+		$hide_on_screen = array();
 
 		$location = array(
 			array(

@@ -28,5 +28,9 @@
 	}
 
 	.wysiwyg h2 {
+		@apply font-bold font-heading text-xl;
+
+		margin-top: 1em;
+		margin-bottom: 1em;
 	}
 }
