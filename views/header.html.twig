@@ -9,12 +9,12 @@
 <header class="{{ html_classes( 'py-3 lg:py-6', classes | default( [] ) | join( ' ' ) ) }}">
 	<div class="container sm:grid sm:grid-cols-12 sm:gap-6">
 		<a href="{{ site.link }}" class="text-2xl font-heading text-center block sm:inline-block sm:align-middle sm:text-left sm:col-span-6 lg:col-span-5">
-			Le parc<br>
-			du château des Ormeaux
+			<span class="italic">Le château<br>
+			des Ormeaux</span>
 			<span class="text-sm font-body block">24 Route de Noizay, 37530 Nazelles</span>
 		</a>
-		<div class="mt-6 sm:mt-0 sm:flex sm:items-center sm:justify-end sm:col-span-6 lg:justify-center lg:col-span-2">
-			<a class="button w-full" href="">{{- __( 'Contact', 'le-chateau-des-ormeaux' ) -}}</a>
+		<div class="mt-6 sm:mt-0 flex sm:items-center justify-center sm:justify-end sm:col-span-6 lg:justify-center lg:col-span-2">
+			<a class="button lg:w-full" href="{{ current_url }}/#contact">{{- __( 'Contact', 'le-chateau-des-ormeaux' ) -}}</a>
 		</div>
 		<div class="hidden lg:col-span-5 lg:flex lg:items-center lg:justify-end gap-6">
 			<ul

@@ -1,0 +1,24 @@
+{#
+ # Blocks: Marquee
+ #}
+
+{% set parameters = {
+	slidesPerView: 'auto',
+	loop: true,
+	speed: 6000,
+	autoplay: {
+		delay: 1,
+	},
+	allowTouchMove: false,
+	disableOnInteraction: true,
+} %}
+
+<div class="swiper" data-module-carousel data-carousel-parameters='{{ parameters | json_encode() }}'>
+	<div class="swiper-wrapper" style="--swiper-wrapper-transition-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);">
+		{% for image in block.images %}
+			<div class="swiper-slide h-48" style="width: auto;">
+				{{- include( 'components/image.html.twig', { classes: [ 'h-full w-auto' ], image: image } ) -}}
+			</div>
+		{% endfor %}
+	</div>
+</div>

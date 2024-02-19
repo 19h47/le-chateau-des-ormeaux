@@ -3,6 +3,7 @@ const { fontFamily, screens } = require('tailwindcss/defaultTheme');
 
 const colors = {
 	gray: {
+		'very-dark': '#1c1c1c',
 		'very-light': '#ededed',
 		'very-light-mostly-white': '#fefefe'
 	},

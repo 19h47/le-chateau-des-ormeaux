@@ -1,5 +1,5 @@
 {#
- # Front Page
+ # Single: Cottage
  #
  # @package WordPress
  # @subpackage LeChateauDesOrmeaux
@@ -11,7 +11,7 @@
 	<main>
 
 
-		{{- include( 'components/hero.html.twig', { hero: post.meta( 'hero' ) } ) -}}
+		{{- include( 'components/hero.html.twig', { hero: post.meta( 'hero' ), thumbnail: post.thumbnail } ) -}}
 
 
 		{{- include( 'blocks/blocks.html.twig', { blocks: post.meta( 'blocks' ), classes: [ 'relative z-2' ] } ) -}}

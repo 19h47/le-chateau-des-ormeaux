@@ -7,11 +7,11 @@
  # @author Jérémy Levron <jeremylevron@19h47.fr> (https://19h47.fr)
  #}
 
-<footer class="{{ html_classes( '', classes | default( [] ) | join( ' ' ) ) }}">
+<footer id="contact" class="{{ html_classes( '', classes | default( [] ) | join( ' ' ) ) }}">
 	<div class="bg-yellow-dark-moderate py-12 text-gray-very-light-mostly-white lg:py-24">
 		<div class="container lg:grid lg:grid-cols-12">
 			<div class="lg:col-span-3 lg:col-start-2">
-				<h2 class="text-3xl font-heading">{{- __( 'Contact Us', 'le-chateau-des-ormeaux' ) -}}</h2>
+				<h2 class="text-3xl font-heading italic">{{- __( 'Contact Us', 'le-chateau-des-ormeaux' ) -}}</h2>
 				<p class="mt-3 lg:mt-6">
 					{{- address | nl2br -}}<br>
 					{%- for phone_number in phones_numbers -%}
@@ -22,8 +22,8 @@
 				</p>
 			</div>
 
-			<div class="mt-6 lg:col-span-6 lg:col-start-6">
-				<h2 class="text-3xl font-heading">{{- __( 'Locate Us', 'le-chateau-des-ormeaux' ) -}}</h2>
+			<div class="mt-6 lg:col-span-6 lg:col-start-6 lg:mt-0">
+				<h2 class="text-3xl font-heading italic">{{- __( 'Locate Us', 'le-chateau-des-ormeaux' ) -}}</h2>
 				<div class="mt-3 relative h-[14.25rem] w-full [&_iframe]:absolute [&_iframe]:w-full [&_iframe]:h-full lg:mt-6 lg:h-[28.5rem]">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2699.2078578078754!2d0.9287796759859006!3d47.42739017117401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fccc974942298d%3A0x507a626e74184105!2sCh%C3%A2teau%20des%20Ormeaux!5e0!3m2!1sfr!2sus!4v1707216184079!5m2!1sfr!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
@@ -56,14 +56,14 @@
 			</ul>
 
 			<div class="flex flex-col mt-6 lg:col-span-5 lg:mt-0 lg:justify-end lg:flex-row lg:items-center">
-				{{- site.title -}}&nbsp;&copy;&nbsp;{{- 'now' | date( 'Y' ) -}}&nbsp;<span class="hidden lg:inline">&hyphen;&nbsp;</span><br class="lg:hidden">
+				<a href="{{ site.link }}" class="hover:underline">{{- site.title -}}</a>&nbsp;&copy;&nbsp;{{- 'now' | date( 'Y' ) -}}&nbsp;<span class="hidden lg:inline">&hyphen;&nbsp;</span><br class="lg:hidden">
 				<div class="flex">
 					<ul
 						class="flex gap-2"
 						itemscope
 						itemtype="http://schema.org/SiteNavigationElement"
 					>
-						{% for item in nav_menus.legals.get_items() %}
+						{%- for item in nav_menus.legals.get_items() -%}
 							<li class="{{ html_classes() }}">
 								<a
 									href="{{ item.url }}"
@@ -78,9 +78,9 @@
 									{{- item.title -}}
 								</a>
 							</li>
-						{% endfor %}
+						{%- endfor -%}
 					</ul>
-					&nbsp;&hyphen;&nbsp;{{- __( 'Created by %s', 'le-chateau-des-ormeaux' ) | format( '19h47' ) -}}
+					&nbsp;&hyphen;&nbsp;{{- __( 'Created by&nbsp;%s', 'le-chateau-des-ormeaux' ) | format( '<a class="hover:underline" href="https://19h47.fr" rel="noopener noreferer" target="_blank">19h47</a>' ) -}}
 				</div>
 			</div>
 		</div>

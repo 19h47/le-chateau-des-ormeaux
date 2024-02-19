@@ -62,7 +62,7 @@ class Settings {
 					'name'        => 'phones_numbers_' . $language['slug'],
 					'label'       => __( 'Phones Numbers', 'le-chateau-des-ormeaux' ),
 					'placeholder' => '087 123 4567, 087 123 4567',
-					'description' => __( 'Theses phones numbers are used for public purposes. Separate phones numbers with commas', 'le-chateau-des-ormeaux' ),
+					'description' => __( 'Theses phones numbers are used for public purposes. Separate phones numbers with commas.', 'le-chateau-des-ormeaux' ),
 				)
 			);
 

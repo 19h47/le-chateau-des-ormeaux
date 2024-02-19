@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Le château des Ormeaux\n"
-"POT-Creation-Date: 2024-02-06 10:20+0100\n"
+"POT-Creation-Date: 2024-02-19 15:16+0100\n"
 "PO-Revision-Date: 2024-02-06 10:19+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -16,8 +16,8 @@ msgstr ""
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 "X-Poedit-SearchPathExcluded-1: node_modules\n"
@@ -32,16 +32,180 @@ msgstr ""
 msgid "It looks like nothing was found at this location."
 msgstr ""
 
-#: includes/Plugins/ACF/Admin/Init.php:32
-msgid "Theme Settings"
+#: includes/Plugins/ACF/Fields/BlocksFields.php:53
+msgid "Blocks"
 msgstr ""
 
-#: includes/Plugins/ACF/Fields/BlocksFields.php:50
+#: includes/Plugins/ACF/Fields/BlocksFields.php:60
+msgid "Carousel"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/BlocksFields.php:65
+#: includes/Plugins/ACF/Fields/BlocksFields.php:154
+#: includes/Plugins/ACF/Fields/BlocksFields.php:234
+msgid "Images"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/BlocksFields.php:69
+msgid "Add as many images as the block contains."
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/BlocksFields.php:70
+#: includes/Plugins/ACF/Fields/BlocksFields.php:159
+msgid "Add Image"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/BlocksFields.php:74
+#: includes/Plugins/ACF/Fields/BlocksFields.php:163
+#: includes/Plugins/ACF/Fields/HeroFields.php:89
+msgid "Image"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/BlocksFields.php:77
+#: includes/Plugins/ACF/Fields/BlocksFields.php:171
+msgid "Indicate the image. (Required)"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/BlocksFields.php:87
+#: includes/Plugins/ACF/Fields/BlocksFields.php:92
+#: includes/Plugins/ACF/Fields/BlocksFields.php:176
+#: includes/Plugins/ACF/Fields/BlocksFields.php:179
+msgid "Caption"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/BlocksFields.php:91
+#: includes/Plugins/ACF/Fields/BlocksFields.php:182
+msgid "Indicate the image caption. (Optional)"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/BlocksFields.php:100
+#: includes/Plugins/ACF/Fields/BlocksFields.php:188
+msgid "Background Color"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/BlocksFields.php:103
+msgid "Background color of the block. (Default grayish orange)"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/BlocksFields.php:112
+#: includes/Plugins/ACF/Fields/BlocksFields.php:125
+msgid "Content"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/BlocksFields.php:117
+#: includes/Plugins/ACF/Fields/BlocksFields.php:120
+msgid "Title"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/BlocksFields.php:121
+msgid "Indicate the title of the block. (Optional)"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/BlocksFields.php:131
+msgid "Indicate the content of the block. (Optional)"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/BlocksFields.php:135
+msgid "Links"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/BlocksFields.php:139
+msgid "Add as many links as the block contains. (Optional)"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/BlocksFields.php:140
+msgid "Add Link"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/BlocksFields.php:158
+msgid "Add as many images as the block contains. (Optional)"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/BlocksFields.php:191
+msgid "Background color of the block. (Default white)"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/BlocksFields.php:200
+msgid "Font Color"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/BlocksFields.php:202
+msgid "Font color of the block. (Default black)"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/BlocksFields.php:212
+msgid "Layout"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/BlocksFields.php:213
+msgid "Should the image be on the right or left of the block. (Default right)"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/BlocksFields.php:217
+msgid "Image on the right"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/BlocksFields.php:218
+msgid "Image on the left"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/BlocksFields.php:229
+msgid "Marquee"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/BlocksFields.php:251
 msgid "Blocks Fields"
 msgstr ""
 
-#: includes/Plugins/ACF/Fields/ThemeSettingsFields.php:50
-msgid "Theme Settings Fields"
+#: includes/Plugins/ACF/Fields/HeroFields.php:53
+msgid "Hero"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/HeroFields.php:54
+msgid "Indicate the information to appear in the hero."
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/HeroFields.php:61
+#: includes/Plugins/ACF/Fields/HeroFields.php:67
+msgid "Headline"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/HeroFields.php:66
+msgid "Indicate the headline of the hero. (Optional)"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/HeroFields.php:71
+#: includes/Plugins/ACF/Fields/HeroFields.php:77
+msgid "Text"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/HeroFields.php:76
+msgid "Indicate the text of the hero. (Optional)"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/HeroFields.php:81
+msgid "Link"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/HeroFields.php:84
+msgid "Indicate the link of the hero. (Optional)"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/HeroFields.php:95
+msgid "Indicate the image of the hero. (Optional)"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/HeroFields.php:99
+msgid "Cottages"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/HeroFields.php:102
+msgid ""
+"Indicate a maximum of two lodgings to highlight in the header. (Optional)"
+msgstr ""
+
+#: includes/Plugins/ACF/Fields/HeroFields.php:122
+msgid "Hero Fields"
 msgstr ""
 
 #: includes/Post/Cottage.php:98
@@ -181,11 +345,11 @@ msgid "Search Cottages"
 msgstr ""
 
 #: includes/Post/Cottage.php:245
-msgid "No case studies found."
+msgid "No cottages found."
 msgstr ""
 
 #: includes/Post/Cottage.php:246
-msgid "No case studies found in Trash."
+msgid "No cottages found in Trash."
 msgstr ""
 
 #: includes/Post/Cottage.php:247
@@ -193,7 +357,7 @@ msgid "Parent Cottage:"
 msgstr ""
 
 #: includes/Post/Cottage.php:248
-msgid "All Case Studies"
+msgid "All Cottages"
 msgstr ""
 
 #: includes/Post/Cottage.php:249
@@ -256,22 +420,22 @@ msgstr ""
 msgid "Cottage"
 msgstr ""
 
-#: includes/Setup/Enqueue.php:78
+#: includes/Setup/Enqueue.php:77
 msgctxt "messages"
 msgid "Please fill out this field."
 msgstr ""
 
-#: includes/Setup/Enqueue.php:81
+#: includes/Setup/Enqueue.php:80
 msgctxt "messages"
 msgid "Please enter an email address."
 msgstr ""
 
-#: includes/Setup/Enqueue.php:82
+#: includes/Setup/Enqueue.php:81
 msgctxt "messages"
 msgid "Please enter a URL."
 msgstr ""
 
-#: includes/Setup/Enqueue.php:83
+#: includes/Setup/Enqueue.php:82
 msgctxt "messages"
 msgid "Please match the expected format."
 msgstr ""
@@ -280,54 +444,69 @@ msgstr ""
 msgid "Main Menu"
 msgstr ""
 
-#: includes/Setup/Settings.php:42
-msgid "Public Email Address"
+#: includes/Setup/NavMenu.php:39
+msgid "Footer Menu"
 msgstr ""
 
-#: includes/Setup/Settings.php:48
-msgid "Email"
+#: includes/Setup/NavMenu.php:40
+msgid "Legals Menu"
+msgstr ""
+
+#: includes/Setup/Settings.php:43
+#, php-format
+msgid "%s Public Email Address"
 msgstr ""
 
 #: includes/Setup/Settings.php:49
+msgid "Email"
+msgstr ""
+
+#: includes/Setup/Settings.php:50
 msgid "This email address is used for public purposes."
 msgstr ""
 
-#: includes/Setup/Settings.php:56
-msgid "Phone Number"
+#: includes/Setup/Settings.php:57
+#, php-format
+msgid "%s Phone Number"
 msgstr ""
 
-#: includes/Setup/Settings.php:62
+#: includes/Setup/Settings.php:63
 msgid "Phones Numbers"
 msgstr ""
 
-#: includes/Setup/Settings.php:64
+#: includes/Setup/Settings.php:65
 msgid ""
 "Theses phones numbers are used for public purposes. Separate phones numbers "
-"with commas"
+"with commas."
 msgstr ""
 
-#: includes/Setup/Settings.php:77 includes/Setup/Theme.php:89
-msgid "LinkedIn"
+#: includes/Setup/Settings.php:71
+#, php-format
+msgid "%s Address"
 msgstr ""
 
-#: includes/Setup/Settings.php:85
-msgid "Enter the LinkedIn URL here."
+#: includes/Setup/Settings.php:80
+msgid "This address is used for public purposes."
 msgstr ""
 
-#: includes/Setup/Settings.php:91 includes/Setup/Theme.php:70
-msgid "Instagram"
-msgstr ""
-
-#: includes/Setup/Settings.php:99
-msgid "Enter the Instagram URL here."
-msgstr ""
-
-#: includes/Setup/Settings.php:105 includes/Setup/Settings.php:115
+#: includes/Setup/Settings.php:81
 msgid "Address"
 msgstr ""
 
-#: includes/Setup/Settings.php:114
-msgid "This address is used for public purposes."
+#: includes/Setup/Settings.php:95 includes/Setup/Theme.php:89
+msgid "LinkedIn"
+msgstr ""
+
+#: includes/Setup/Settings.php:103
+msgid "Enter the LinkedIn URL here."
+msgstr ""
+
+#: includes/Setup/Settings.php:109 includes/Setup/Theme.php:70
+msgid "Instagram"
+msgstr ""
+
+#: includes/Setup/Settings.php:117
+msgid "Enter the Instagram URL here."
 msgstr ""
 
 #: includes/Setup/Theme.php:62
@@ -352,6 +531,31 @@ msgstr ""
 
 #: includes/Setup/Theme.php:91
 msgid "Share on LinkedIn"
+msgstr ""
+
+#: views/components/tease-cottage.html.twig:8
+msgid "Discover"
+msgstr ""
+
+#: views/footer.html.twig:14
+msgid "Contact Us"
+msgstr ""
+
+#: views/footer.html.twig:18
+msgid "Tel:"
+msgstr ""
+
+#: views/footer.html.twig:21
+msgid "Email:"
+msgstr ""
+
+#: views/footer.html.twig:26
+msgid "Locate Us"
+msgstr ""
+
+#: views/footer.html.twig:83
+#, php-format
+msgid "Created by&nbsp;%s"
 msgstr ""
 
 #: views/header.html.twig:17

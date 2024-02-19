@@ -35,9 +35,9 @@ class Init {
 			WPQuery::class,
 			Media::class,
 			Post\Cottage::class,
-			Plugins\ACF\Admin\Init::class,
+			Plugins\ACF\Admin\PrepareField::class,
 			Plugins\ACF\Fields\BlocksFields::class,
-			Plugins\ACF\Fields\ThemeSettingsFields::class,
+			Plugins\ACF\Fields\HeroFields::class,
 		);
 	}
 
@@ -50,6 +50,7 @@ class Init {
 	public static function run_services(): void {
 		foreach ( self::get_services() as $class ) {
 			$service = self::instantiate( $class );
+
 			if ( method_exists( $service, 'run' ) ) {
 				$service->run();
 			}

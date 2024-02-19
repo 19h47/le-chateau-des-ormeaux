@@ -1,0 +1,12 @@
+{#
+ # Tease: Cottage
+ #}
+
+<article class="aspect-[566/552] flex items-end text-center relative before:bg-gray-very-dark before:absolute before:inset-0 before:opacity-30 before:z-2">
+	<div class="relative z-3 m-6 w-full">
+		<h2 class="font-heading italic text-5xl">{{ post.title }}</h2>
+		<a class="button mt-6" href="{{ post.link }}">{{- __( 'Discover', 'le-chateau-des-ormeaux' ) -}}</a>
+	</div>
+
+	{{- include( 'components/image.html.twig', { image: post.thumbnail, classes: [ 'z-1', 'absolute', 'inset-0', 'object-cover', 'w-full', 'h-full' ] } ) -}}
+</article>

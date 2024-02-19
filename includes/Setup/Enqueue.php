@@ -72,7 +72,6 @@ class Enqueue {
 			'page_for_loser'         => get_permalink( get_option( 'page_for_loser' ) ),
 			'page_for_winner'        => get_permalink( get_option( 'page_for_winner' ) ),
 			'page_for_thank_you'     => get_permalink( get_option( 'page_for_thank_you' ) ),
-			'google_api_key'         => get_option( 'google_api_key' ),
 			'messages'               => array(
 				'value_missing' => array(
 					'default' => _x( 'Please fill out this field.', 'messages', 'le-chateau-des-ormeaux' ),
