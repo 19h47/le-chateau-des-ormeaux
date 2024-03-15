@@ -22,7 +22,6 @@ class NavMenu {
 	 */
 	public function run(): void {
 		add_action( 'after_setup_theme', array( $this, 'register_menus' ) );
-		add_filter( 'timber/context', array( $this, 'add_to_context' ) );
 	}
 
 	/**
@@ -40,26 +39,5 @@ class NavMenu {
 				'legals' => __( 'Legals Menu', 'le-chateau-des-ormeaux' ),
 			)
 		);
-	}
-
-
-	/**
-	 * Add to context
-	 *
-	 * @param array $context Timber context.
-	 *
-	 * @see https://developer.wordpress.org/reference/functions/get_registered_nav_menus/
-	 * @since  1.0.0
-	 *
-	 * @return array
-	 */
-	public function add_to_context( array $context ): array {
-		$menus = get_registered_nav_menus();
-
-		foreach ( $menus as $menu => $value ) {
-			$context['nav_menus'][ $menu ] = Timber::get_menu( $menu );
-		}
-
-		return $context;
 	}
 }

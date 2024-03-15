@@ -1,6 +1,6 @@
 <?php // phpcs:ignore
 /**
- * Themes
+ * Context
  *
  * @package WordPress
  * @subpackage LeChateauDesOrmeaux/Setup/Theme
@@ -14,9 +14,9 @@ Timber::init();
 Timber::$dirname = array( 'views', 'templates', 'dist' );
 
 /**
- * Theme
+ * Context
  */
-class Theme extends Site {
+class Context extends Site {
 
 	/**
 	 * Constructor
@@ -27,6 +27,7 @@ class Theme extends Site {
 		add_filter( 'timber/context', array( $this, 'add_socials_to_context' ) );
 		add_filter( 'timber/context', array( $this, 'add_to_context' ) );
 		add_filter( 'timber/context', array( $this, 'add_to_theme' ) );
+		add_filter( 'timber/context', array( $this, 'add_menus_to_context' ) );
 		add_filter( 'timber/post/classmap', array( $this, 'add_post_classmap' ) );
 	}
 
@@ -34,7 +35,9 @@ class Theme extends Site {
 	/**
 	 * Add to theme
 	 *
-	 * @param array $context Timber context.
+	 * @param array $context The global context.
+	 *
+	 * @return array
 	 */
 	public function add_to_theme( array $context ): array {
 		$manifest = get_theme_manifest();
@@ -52,7 +55,8 @@ class Theme extends Site {
 	/**
 	 * Add socials to context
 	 *
-	 * @param array $context Timber context.
+	 * @param array $context The global context.
+	 *
 	 * @return array
 	 */
 	public function add_socials_to_context( array $context ): array {
@@ -113,10 +117,9 @@ class Theme extends Site {
 	/**
 	 * Add to context
 	 *
-	 * @param array $context Timber context.
+	 * @param array $context The global context.
 	 *
 	 * @return array
-	 * @since  1.0.0
 	 */
 	public function add_to_context( array $context ): array {
 		global $wp;
@@ -127,8 +130,6 @@ class Theme extends Site {
 		$context['phones_numbers'] = explode( ', ', get_option( 'phones_numbers_' . pll_current_language() ) );
 
 		$context['privacy_policy_url'] = get_privacy_policy_url();
-
-		$context['klaviyo'] = get_field( 'klaviyo', 'option' );
 
 		return $context;
 	}
@@ -144,5 +145,25 @@ class Theme extends Site {
 		$custom_classmap = array();
 
 		return array_merge( $classmap, $custom_classmap );
+	}
+
+
+	/**
+	 * Add menus to context
+	 *
+	 * @param array $context The global context.
+	 *
+	 * @see https://developer.wordpress.org/reference/functions/get_registered_nav_menus/
+	 *
+	 * @return array
+	 */
+	public function add_menus_to_context( array $context ): array {
+		$menus = get_registered_nav_menus();
+
+		foreach ( $menus as $menu => $value ) {
+			$context['nav_menus'][ $menu ] = Timber::get_menu( $menu );
+		}
+
+		return $context;
 	}
 }

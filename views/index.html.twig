@@ -33,16 +33,14 @@
 				{{- include( 'header.html.twig', { classes: [ 'text-white absolute top-0 inset-x-0 z-10' ] } ) -}}
 			{% endblock %}
 
-			{% block content %}
+			{%- block content -%}
 				<main>
 
 					<div class="bg-yellow-dark-moderate text-white pt-48 lg:pt-[10.5rem] pb-6 lg:pb-12">
 						<div class="container grid grid-cols-12">
-
-
-							<h1
-								class="{{ html_classes( 'text-6xl font-heading col-start-5 col-span-4 text-center flex justify-center' ) }}"
-							>{{- post.title -}}</h1>
+							<h1 class="{{ html_classes( 'text-6xl font-heading col-start-5 col-span-4 text-center flex justify-center' ) }}">
+								{{- post.title -}}
+							</h1>
 						</div>
 					</div>
 
@@ -58,7 +56,7 @@
 					{{- include( 'blocks/blocks.html.twig', { blocks: post.meta( 'blocks' ), classes: [ 'relative z-2' ] } ) -}}
 
 				</main>
-			{% endblock %}
+			{%- endblock -%}
 
 
 			{% block footer %}{{- include( 'footer.html.twig' ) -}}{%- endblock -%}
@@ -66,7 +64,7 @@
 		</div>
 
 
-		{{ function( 'wp_footer' ) }}
+		{{- function( 'wp_footer' ) -}}
 
 		<div id="svg-sprite" style="display: none;">{{- include( 'icons.svg', ignore_missing = true ) -}}</div>
 

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Le château des Ormeaux\n"
-"POT-Creation-Date: 2024-02-19 15:16+0100\n"
-"PO-Revision-Date: 2024-02-19 15:18+0100\n"
+"POT-Creation-Date: 2024-03-15 10:20+0100\n"
+"PO-Revision-Date: 2024-03-15 10:20+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -16,8 +16,8 @@ msgstr ""
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 "X-Poedit-SearchPathExcluded-1: node_modules\n"
@@ -32,182 +32,191 @@ msgstr "Oups ! Cette page est introuvable."
 msgid "It looks like nothing was found at this location."
 msgstr "On dirait que rien n'a été trouvé à cet endroit."
 
-#: includes/Plugins/ACF/Fields/BlocksFields.php:53
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:53
 msgid "Blocks"
 msgstr "Blocs"
 
-#: includes/Plugins/ACF/Fields/BlocksFields.php:60
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:60
 msgid "Carousel"
 msgstr "Carrousel"
 
-#: includes/Plugins/ACF/Fields/BlocksFields.php:65
-#: includes/Plugins/ACF/Fields/BlocksFields.php:154
-#: includes/Plugins/ACF/Fields/BlocksFields.php:234
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:65
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:154
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:234
 msgid "Images"
 msgstr "Images"
 
-#: includes/Plugins/ACF/Fields/BlocksFields.php:69
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:69
 msgid "Add as many images as the block contains."
 msgstr "Ajoutez autant d’images que le bloc contient."
 
-#: includes/Plugins/ACF/Fields/BlocksFields.php:70
-#: includes/Plugins/ACF/Fields/BlocksFields.php:159
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:70
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:159
 msgid "Add Image"
 msgstr "Ajouter une image"
 
-#: includes/Plugins/ACF/Fields/BlocksFields.php:74
-#: includes/Plugins/ACF/Fields/BlocksFields.php:163
-#: includes/Plugins/ACF/Fields/HeroFields.php:89
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:74
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:163
+#: includes/Plugins/ACF/IncludeFields/HeroFields.php:89
 msgid "Image"
 msgstr "Image"
 
-#: includes/Plugins/ACF/Fields/BlocksFields.php:77
-#: includes/Plugins/ACF/Fields/BlocksFields.php:171
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:77
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:171
 msgid "Indicate the image. (Required)"
 msgstr "Indiquez l’image. (Obligatoire)"
 
-#: includes/Plugins/ACF/Fields/BlocksFields.php:87
-#: includes/Plugins/ACF/Fields/BlocksFields.php:92
-#: includes/Plugins/ACF/Fields/BlocksFields.php:176
-#: includes/Plugins/ACF/Fields/BlocksFields.php:179
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:87
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:92
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:176
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:179
 msgid "Caption"
 msgstr "Légende"
 
-#: includes/Plugins/ACF/Fields/BlocksFields.php:91
-#: includes/Plugins/ACF/Fields/BlocksFields.php:182
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:91
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:182
 msgid "Indicate the image caption. (Optional)"
 msgstr "Indiquez la légende de l’image. (Optionnel)"
 
-#: includes/Plugins/ACF/Fields/BlocksFields.php:100
-#: includes/Plugins/ACF/Fields/BlocksFields.php:188
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:100
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:188
 msgid "Background Color"
 msgstr "Couleur de fond"
 
-#: includes/Plugins/ACF/Fields/BlocksFields.php:103
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:103
 msgid "Background color of the block. (Default grayish orange)"
 msgstr "Couleur de fond du bloc. (Orange grisâtre par défaut)"
 
-#: includes/Plugins/ACF/Fields/BlocksFields.php:112
-#: includes/Plugins/ACF/Fields/BlocksFields.php:125
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:112
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:125
 msgid "Content"
 msgstr "Contenu"
 
-#: includes/Plugins/ACF/Fields/BlocksFields.php:117
-#: includes/Plugins/ACF/Fields/BlocksFields.php:120
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:117
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:120
 msgid "Title"
 msgstr "Titre"
 
-#: includes/Plugins/ACF/Fields/BlocksFields.php:121
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:121
 msgid "Indicate the title of the block. (Optional)"
 msgstr "Indiquez le titre du bloc. (Optionnel)"
 
-#: includes/Plugins/ACF/Fields/BlocksFields.php:131
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:131
 msgid "Indicate the content of the block. (Optional)"
 msgstr "Indiquez le contenu du bloc. (Optionnel)"
 
-#: includes/Plugins/ACF/Fields/BlocksFields.php:135
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:135
 msgid "Links"
 msgstr "Liens"
 
-#: includes/Plugins/ACF/Fields/BlocksFields.php:139
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:139
 msgid "Add as many links as the block contains. (Optional)"
 msgstr "Ajoutez autant de liens que le bloc contient. (Optionnel)"
 
-#: includes/Plugins/ACF/Fields/BlocksFields.php:140
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:140
 msgid "Add Link"
 msgstr "Ajouter un lien"
 
-#: includes/Plugins/ACF/Fields/BlocksFields.php:158
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:158
 msgid "Add as many images as the block contains. (Optional)"
 msgstr "Ajoutez autant d’images que le bloc contient. (Optionnel)"
 
-#: includes/Plugins/ACF/Fields/BlocksFields.php:191
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:191
 msgid "Background color of the block. (Default white)"
 msgstr "Couleur de fond du bloc. (Blanche par défaut)"
 
-#: includes/Plugins/ACF/Fields/BlocksFields.php:200
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:200
 msgid "Font Color"
 msgstr "Couleur de la police"
 
-#: includes/Plugins/ACF/Fields/BlocksFields.php:202
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:202
 msgid "Font color of the block. (Default black)"
 msgstr "Couleur de la police du bloc. (Noire par défaut)"
 
-#: includes/Plugins/ACF/Fields/BlocksFields.php:212
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:212
 msgid "Layout"
 msgstr "Mise en page"
 
-#: includes/Plugins/ACF/Fields/BlocksFields.php:213
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:213
 msgid "Should the image be on the right or left of the block. (Default right)"
 msgstr ""
 "L’image doit-elle être à droite ou à gauche du bloc. (À droite par défaut)"
 
-#: includes/Plugins/ACF/Fields/BlocksFields.php:217
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:217
 msgid "Image on the right"
 msgstr "Image à droite"
 
-#: includes/Plugins/ACF/Fields/BlocksFields.php:218
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:218
 msgid "Image on the left"
 msgstr "Image à gauche"
 
-#: includes/Plugins/ACF/Fields/BlocksFields.php:229
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:229
 msgid "Marquee"
 msgstr "Carrousel défilant"
 
-#: includes/Plugins/ACF/Fields/BlocksFields.php:251
+#: includes/Plugins/ACF/IncludeFields/BlocksFields.php:251
 msgid "Blocks Fields"
 msgstr "Champs de blocs"
 
-#: includes/Plugins/ACF/Fields/HeroFields.php:53
+#: includes/Plugins/ACF/IncludeFields/CottagePostFields.php:46
+#: includes/Plugins/ACF/IncludeFields/CottagePostFields.php:50
+msgid "Prices"
+msgstr "Tarifs"
+
+#: includes/Plugins/ACF/IncludeFields/CottagePostFields.php:60
+msgid "Cottage Post Fields"
+msgstr "Champs du gîte"
+
+#: includes/Plugins/ACF/IncludeFields/HeroFields.php:53
 msgid "Hero"
 msgstr "Hero"
 
-#: includes/Plugins/ACF/Fields/HeroFields.php:54
+#: includes/Plugins/ACF/IncludeFields/HeroFields.php:54
 msgid "Indicate the information to appear in the hero."
 msgstr "Indiquez les informations à faire figurer dans l’en-tête."
 
-#: includes/Plugins/ACF/Fields/HeroFields.php:61
-#: includes/Plugins/ACF/Fields/HeroFields.php:67
+#: includes/Plugins/ACF/IncludeFields/HeroFields.php:61
+#: includes/Plugins/ACF/IncludeFields/HeroFields.php:67
 msgid "Headline"
 msgstr "Titre"
 
-#: includes/Plugins/ACF/Fields/HeroFields.php:66
+#: includes/Plugins/ACF/IncludeFields/HeroFields.php:66
 msgid "Indicate the headline of the hero. (Optional)"
 msgstr "Indiquez le titre de l’en-tête. (Optionnel)"
 
-#: includes/Plugins/ACF/Fields/HeroFields.php:71
-#: includes/Plugins/ACF/Fields/HeroFields.php:77
+#: includes/Plugins/ACF/IncludeFields/HeroFields.php:71
+#: includes/Plugins/ACF/IncludeFields/HeroFields.php:77
 msgid "Text"
 msgstr "Texte"
 
-#: includes/Plugins/ACF/Fields/HeroFields.php:76
+#: includes/Plugins/ACF/IncludeFields/HeroFields.php:76
 msgid "Indicate the text of the hero. (Optional)"
 msgstr "Indiquez le texte de l’en-tête. (Optionnel)"
 
-#: includes/Plugins/ACF/Fields/HeroFields.php:81
+#: includes/Plugins/ACF/IncludeFields/HeroFields.php:81
 msgid "Link"
 msgstr "Lien"
 
-#: includes/Plugins/ACF/Fields/HeroFields.php:84
+#: includes/Plugins/ACF/IncludeFields/HeroFields.php:84
 msgid "Indicate the link of the hero. (Optional)"
 msgstr "Indiquez le lien de l’en-tête. (Optionnel)"
 
-#: includes/Plugins/ACF/Fields/HeroFields.php:95
+#: includes/Plugins/ACF/IncludeFields/HeroFields.php:95
 msgid "Indicate the image of the hero. (Optional)"
 msgstr "Indiquez l’image de l’en-tête. (Optionnel)"
 
-#: includes/Plugins/ACF/Fields/HeroFields.php:99
+#: includes/Plugins/ACF/IncludeFields/HeroFields.php:99
 msgid "Cottages"
 msgstr "Gîtes"
 
-#: includes/Plugins/ACF/Fields/HeroFields.php:102
+#: includes/Plugins/ACF/IncludeFields/HeroFields.php:102
 msgid ""
 "Indicate a maximum of two lodgings to highlight in the header. (Optional)"
 msgstr ""
 "Indiquez au maximum deux logements à mettre en avant dans l’en-tête. "
 "(Optionnel)"
 
-#: includes/Plugins/ACF/Fields/HeroFields.php:122
+#: includes/Plugins/ACF/IncludeFields/HeroFields.php:122
 msgid "Hero Fields"
 msgstr "Champs de l’en-tête"
 
@@ -423,6 +432,38 @@ msgstr ""
 msgid "Cottage"
 msgstr "Gîte"
 
+#: includes/Setup/Context.php:66
+msgid "Facebook"
+msgstr "Facebook"
+
+#: includes/Setup/Context.php:68
+msgid "Share on Facebook"
+msgstr "Partager sur Facebook"
+
+#: includes/Setup/Context.php:74 includes/Setup/Settings.php:109
+msgid "Instagram"
+msgstr "Instagram"
+
+#: includes/Setup/Context.php:79
+msgid "YouTube"
+msgstr "YouTube"
+
+#: includes/Setup/Context.php:85
+msgid "Twitter"
+msgstr "Twitter"
+
+#: includes/Setup/Context.php:87
+msgid "Share on Twitter"
+msgstr "Partager sur Twitter"
+
+#: includes/Setup/Context.php:93 includes/Setup/Settings.php:95
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: includes/Setup/Context.php:95
+msgid "Share on LinkedIn"
+msgstr "Partagez sur LinkedIn"
+
 #: includes/Setup/Enqueue.php:77
 msgctxt "messages"
 msgid "Please fill out this field."
@@ -443,15 +484,15 @@ msgctxt "messages"
 msgid "Please match the expected format."
 msgstr "Veuillez correspondre au format attendu."
 
-#: includes/Setup/NavMenu.php:38
+#: includes/Setup/NavMenu.php:37
 msgid "Main Menu"
 msgstr "Menu principal"
 
-#: includes/Setup/NavMenu.php:39
+#: includes/Setup/NavMenu.php:38
 msgid "Footer Menu"
 msgstr "Menu pied de page"
 
-#: includes/Setup/NavMenu.php:40
+#: includes/Setup/NavMenu.php:39
 msgid "Legals Menu"
 msgstr "Menu des mentions légales"
 
@@ -498,45 +539,13 @@ msgstr "Cette adresse est utilisée à des fins publiques."
 msgid "Address"
 msgstr "Adresse postale"
 
-#: includes/Setup/Settings.php:95 includes/Setup/Theme.php:89
-msgid "LinkedIn"
-msgstr "LinkedIn"
-
 #: includes/Setup/Settings.php:103
 msgid "Enter the LinkedIn URL here."
 msgstr "Indiquer l’URL du compte LinkedIn."
 
-#: includes/Setup/Settings.php:109 includes/Setup/Theme.php:70
-msgid "Instagram"
-msgstr "Instagram"
-
 #: includes/Setup/Settings.php:117
 msgid "Enter the Instagram URL here."
 msgstr "Indiquer l’URL du compte Instagram."
-
-#: includes/Setup/Theme.php:62
-msgid "Facebook"
-msgstr "Facebook"
-
-#: includes/Setup/Theme.php:64
-msgid "Share on Facebook"
-msgstr "Partager sur Facebook"
-
-#: includes/Setup/Theme.php:75
-msgid "YouTube"
-msgstr "YouTube"
-
-#: includes/Setup/Theme.php:81
-msgid "Twitter"
-msgstr "Twitter"
-
-#: includes/Setup/Theme.php:83
-msgid "Share on Twitter"
-msgstr "Partager sur Twitter"
-
-#: includes/Setup/Theme.php:91
-msgid "Share on LinkedIn"
-msgstr "Partagez sur LinkedIn"
 
 #: views/components/tease-cottage.html.twig:8
 msgid "Discover"
@@ -604,6 +613,3 @@ msgstr "https://19h47.fr/"
 
 #~ msgid "Choose up to 4 images."
 #~ msgstr "Choisissez jusqu’à 4 images."
-
-#~ msgid "Front Page Fields"
-#~ msgstr "Champs de la page d’accueil"

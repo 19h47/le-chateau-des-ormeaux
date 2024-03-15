@@ -6,7 +6,7 @@
  * @subpackage LeChateauDesOrmeaux
  */
 
-namespace LeChateauDesOrmeaux\Plugins\ACF\Fields;
+namespace LeChateauDesOrmeaux\Plugins\ACF\IncludeFields;
 
 /**
  * Blocks  Fields
@@ -18,7 +18,7 @@ class BlocksFields {
 	 * @return void
 	 */
 	public function run() {
-		add_action( 'acf/init', array( $this, 'fields' ) );
+		add_action( 'acf/include_fields', array( $this, 'fields' ) );
 	}
 
 	/**

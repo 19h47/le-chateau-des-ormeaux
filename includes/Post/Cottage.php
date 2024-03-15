@@ -8,12 +8,12 @@
 
 namespace LeChateauDesOrmeaux\Post;
 
-use Timber\{ Timber };
+use Timber\{ Timber, Site };
 
 /**
  * Cottage class
  */
-class Cottage {
+class Cottage extends Site {
 
 	/**
 	 * Runs initialization tasks.

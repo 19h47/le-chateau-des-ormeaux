@@ -16,5 +16,19 @@
 
 		{{- include( 'blocks/blocks.html.twig', { blocks: post.meta( 'blocks' ), classes: [ 'relative z-2' ] } ) -}}
 
+		{%- if post.meta( 'prices' ) -%}
+			<dialog data-module-modal class="rounded-3xl border-4 text-center p-6 font-semibold border-gray-very-dark">
+				<button data-modal="close" type="button" class="absolute block top-0 right-0 mt-3 mr-3">{{ icon( 'times', { classes: [ 'w-3 h-3' ] } ) }}</button>
+				<div class="space-y-6">
+					<h2 class="text-3xl font-heading italic">{{- __( 'Prices', 'le-chateau-des-ormeaux' ) -}}</h2>
+					<p>{{- post.meta( 'prices' ) -}}</p>
+				</div>
+			</dialog>
+
+
+		{%- endif -%}
+
 	</main>
+
+
 {% endblock %}

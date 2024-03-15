@@ -31,7 +31,11 @@
 			{%- if block.links -%}
 				<div class="flex gap-6 flex-wrap">
 					{% for item in block.links %}
-						<a class="button" href="{{ item.link.url }}">{{- item.link.title -}}</a>
+						{%- if '#tarifs' in item.link.url or '#prices' in item.link.url -%}
+							<button type="button" class="button" data-module-modal-button>{{- item.link.title -}}</button>
+						{%- else -%}
+							<a class="button" href="{{ item.link.url }}">{{- item.link.title -}}</a>
+						{%- endif -%}
 					{% endfor %}
 				</div>
 			{%- endif -%}

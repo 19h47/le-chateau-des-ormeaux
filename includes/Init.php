@@ -22,7 +22,7 @@ class Init {
 		return array(
 			Setup\Enqueue::class,
 			Setup\Settings::class,
-			Setup\Theme::class,
+			Setup\Context::class,
 			Setup\Twig::class,
 			Setup\NavMenu::class,
 			Setup\Supports::class,
@@ -36,8 +36,9 @@ class Init {
 			Media::class,
 			Post\Cottage::class,
 			Plugins\ACF\Admin\PrepareField::class,
-			Plugins\ACF\Fields\BlocksFields::class,
-			Plugins\ACF\Fields\HeroFields::class,
+			Plugins\ACF\IncludeFields\BlocksFields::class,
+			Plugins\ACF\IncludeFields\CottagePostFields::class,
+			Plugins\ACF\IncludeFields\HeroFields::class,
 		);
 	}
 
