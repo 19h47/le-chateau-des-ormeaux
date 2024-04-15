@@ -10,7 +10,7 @@
 } %}
 
 <div class="swiper py-12 lg:py-24" style="background-color: {{ block.background_color }};" data-module-carousel data-carousel-parameters='{{ parameters | json_encode() }}'>
-	<div class="swiper-wrapper">
+	<div class="swiper-wrapper z-1">
 		{% for item in block.images %}
 			<div class="swiper-slide" style="width: auto;">
 				{{- include( 'components/image.html.twig', { classes: [ 'h-[12.75rem] lg:h-[25.5rem] w-auto' ], image: item.image } ) -}}
@@ -19,5 +19,16 @@
 				{%- endif -%}
 			</div>
 		{% endfor %}
+	</div>
+
+	<div class="text-gray-very-dark absolute inset-0 w-full h-full flex items-center z-2 pointer-events-none">
+		<div class="container flex justify-between">
+			<button class="border-4 rounded-full bg-white border-current flex items-center justify-center h-12 w-12 pointer-events-auto" type="button" data-carousel="previous" aria-label="{{ __( 'Previous', 'le-chateau-des-ormeaux' ) }}">
+				{{ icon( 'chevron-left-solid', { classes: [ 'w-6 h-6' ] } ) }}
+			</button>
+			<button class="border-4 rounded-full bg-white border-current flex items-center justify-center h-12 w-12 pointer-events-auto" type="button" data-carousel="next" aria-label="{{ __( 'Next', 'le-chateau-des-ormeaux' ) }}">
+				{{ icon( 'chevron-right-solid', { classes: [ 'w-6 h-6' ] } ) }}
+			</button>
+		</div>
 	</div>
 </div>

@@ -1,8 +1,8 @@
 <?php // phpcs:ignore
 /**
- * Les Rapporteuses helpers function
+ * Le Château des Ormeaux helpers function
  *
- * @package Les Rapporteuses
+ * @package LeChateauDesOrmeaux
  */
 
 

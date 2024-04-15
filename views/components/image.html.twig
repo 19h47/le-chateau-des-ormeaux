@@ -27,8 +27,8 @@
 			loading="{{ loading | default( 'lazy' ) }}"
 			src="{{ image.src( size ) }}"
 			alt="{{ image.alt }}"
-			width="{{ image.sizes[ size ].width | default( image.width ) }}"
-			height="{{ image.sizes[ size ].height | default( image.height ) }}"
+			width="{{ image.width }}"
+			height="{{ image.height }}"
 			{{ image.srcset ? "srcset=\"#{ image.srcset }\"" : '' }}
 			{{ image.img_sizes ? "sizes=\"#{ image.img_sizes( size ) }\"" : '' }}
 			{{ attributes ? attributes | map( ( value, key ) => "#{key}=\"#{value}\"" ) | join( ' ' ) | raw }}

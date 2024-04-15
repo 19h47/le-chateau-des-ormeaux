@@ -9,12 +9,7 @@
 
 {% block content %}
 	<main>
-
-
 		{{- include( 'components/hero.html.twig', { hero: post.meta( 'hero' ) } ) -}}
-
-
 		{{- include( 'blocks/blocks.html.twig', { blocks: post.meta( 'blocks' ), classes: [ 'relative z-2' ] } ) -}}
-
 	</main>
 {% endblock %}
