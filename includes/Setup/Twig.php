@@ -154,27 +154,31 @@ class Twig {
 		}
 
 		// Polylang.
-		if ( function_exists( 'pll_the_languages' ) ) {
-			$twig->addFunction(
-				new TwigFunction(
-					'pll_the_languages',
-					function ( array $args = array( 'raw' => 1 ) ) {
+		$twig->addFunction(
+			new TwigFunction(
+				'pll_the_languages',
+				function ( array $args = array( 'raw' => 1 ) ) {
+					if ( function_exists( ( 'pll_the_languages' ) ) ) {
 						return pll_the_languages( $args );
 					}
-				)
-			);
-		}
 
-		if ( function_exists( 'pll_current_language' ) ) {
-			$twig->addFunction(
-				new TwigFunction(
-					'pll_current_language',
-					function () {
+					return array();
+				}
+			)
+		);
+
+		$twig->addFunction(
+			new TwigFunction(
+				'pll_current_language',
+				function () {
+					if ( function_exists( 'pll_current_language' ) ) {
 						return pll_current_language( $value );
 					}
-				)
-			);
-		}
+
+					return get_locale();
+				}
+			)
+		);
 
 		return $twig;
 	}

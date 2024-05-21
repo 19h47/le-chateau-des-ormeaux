@@ -37,50 +37,53 @@ class Settings {
 			'reading'
 		);
 
-		foreach ( pll_the_languages( array( 'raw' => 1 ) ) as $language ) {
-			add_settings_field(
-				'public_email_' . $language['slug'],
-				sprintf( __( '%s Public Email Address', 'le-chateau-des-ormeaux' ), $language['name'] ),
-				array( $this, 'email_callback_function' ),
-				'reading',
-				'contacts',
-				array(
-					'name'        => 'public_email_' . $language['slug'],
-					'label'       => __( 'Email', 'le-chateau-des-ormeaux' ),
-					'description' => __( 'This email address is used for public purposes.', 'le-chateau-des-ormeaux' ),
-					'placeholder' => 'artvandelay@vandelayindustries.com',
-				)
-			);
+		if ( function_exists( ( 'pll_the_languages' ) ) ) {
 
-			add_settings_field(
-				'phones_numbers_' . $language['slug'],
-				sprintf( __( '%s Phone Number', 'le-chateau-des-ormeaux' ), $language['name'] ),
-				array( $this, 'text_callback_function' ),
-				'reading',
-				'contacts',
-				array(
-					'name'        => 'phones_numbers_' . $language['slug'],
-					'label'       => __( 'Phones Numbers', 'le-chateau-des-ormeaux' ),
-					'placeholder' => '087 123 4567, 087 123 4567',
-					'description' => __( 'Theses phones numbers are used for public purposes. Separate phones numbers with commas.', 'le-chateau-des-ormeaux' ),
-				)
-			);
+			foreach ( pll_the_languages( array( 'raw' => 1 ) ) as $language ) {
+				add_settings_field(
+					'public_email_' . $language['slug'],
+					sprintf( __( '%s Public Email Address', 'le-chateau-des-ormeaux' ), $language['name'] ),
+					array( $this, 'email_callback_function' ),
+					'reading',
+					'contacts',
+					array(
+						'name'        => 'public_email_' . $language['slug'],
+						'label'       => __( 'Email', 'le-chateau-des-ormeaux' ),
+						'description' => __( 'This email address is used for public purposes.', 'le-chateau-des-ormeaux' ),
+						'placeholder' => 'artvandelay@vandelayindustries.com',
+					)
+				);
 
-			add_settings_field(
-				'address_' . $language['slug'],
-				sprintf( __( '%s Address', 'le-chateau-des-ormeaux' ), $language['name'] ),
-				array( $this, 'textarea_callback_function' ),
-				'reading',
-				'default',
-				array(
-					'id'          => 'address_' . $language['slug'],
-					'name'        => 'address_' . $language['slug'],
-					'rows'        => 3,
-					'value'       => get_option( 'address_' . $language['slug'] ),
-					'description' => __( 'This address is used for public purposes.', 'le-chateau-des-ormeaux' ),
-					'placeholder' => __( 'Address', 'le-chateau-des-ormeaux' ),
-				)
-			);
+				add_settings_field(
+					'phones_numbers_' . $language['slug'],
+					sprintf( __( '%s Phone Number', 'le-chateau-des-ormeaux' ), $language['name'] ),
+					array( $this, 'text_callback_function' ),
+					'reading',
+					'contacts',
+					array(
+						'name'        => 'phones_numbers_' . $language['slug'],
+						'label'       => __( 'Phones Numbers', 'le-chateau-des-ormeaux' ),
+						'placeholder' => '087 123 4567, 087 123 4567',
+						'description' => __( 'Theses phones numbers are used for public purposes. Separate phones numbers with commas.', 'le-chateau-des-ormeaux' ),
+					)
+				);
+
+				add_settings_field(
+					'address_' . $language['slug'],
+					sprintf( __( '%s Address', 'le-chateau-des-ormeaux' ), $language['name'] ),
+					array( $this, 'textarea_callback_function' ),
+					'reading',
+					'default',
+					array(
+						'id'          => 'address_' . $language['slug'],
+						'name'        => 'address_' . $language['slug'],
+						'rows'        => 3,
+						'value'       => get_option( 'address_' . $language['slug'] ),
+						'description' => __( 'This address is used for public purposes.', 'le-chateau-des-ormeaux' ),
+						'placeholder' => __( 'Address', 'le-chateau-des-ormeaux' ),
+					)
+				);
+			}
 		}
 
 		add_settings_section(
@@ -259,10 +262,12 @@ class Settings {
 			register_setting( 'general', $setting, $args );
 		}
 
-		foreach ( pll_the_languages( array( 'raw' => 1 ) ) as $language ) {
-			register_setting( 'reading', 'public_email_' . $language['slug'] );
-			register_setting( 'reading', 'phones_numbers_' . $language['slug'] );
-			register_setting( 'reading', 'address_' . $language['slug'] );
+		if ( function_exists( ( 'pll_the_languages' ) ) ) {
+			foreach ( pll_the_languages( array( 'raw' => 1 ) ) as $language ) {
+				register_setting( 'reading', 'public_email_' . $language['slug'] );
+				register_setting( 'reading', 'phones_numbers_' . $language['slug'] );
+				register_setting( 'reading', 'address_' . $language['slug'] );
+			}
 		}
 	}
 }

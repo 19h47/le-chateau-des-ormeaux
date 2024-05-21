@@ -125,9 +125,11 @@ class Context extends Site {
 		global $wp;
 
 		$context['current_url']    = home_url( add_query_arg( array(), $wp->request ) );
-		$context['public_email']   = get_option( 'public_email_' . pll_current_language() );
-		$context['address']        = get_option( 'address_' . pll_current_language() );
-		$context['phones_numbers'] = explode( ', ', get_option( 'phones_numbers_' . pll_current_language() ) );
+		if (function_exists(('pll_current_language'))) {
+			$context['public_email']   = get_option( 'public_email_' . pll_current_language() );
+			$context['address']        = get_option( 'address_' . pll_current_language() );
+			$context['phones_numbers'] = explode( ', ', get_option( 'phones_numbers_' . pll_current_language() ) );
+		}
 
 		$context['privacy_policy_url'] = get_privacy_policy_url();
 
