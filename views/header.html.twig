@@ -13,9 +13,23 @@
 			des Ormeaux</span>
 			<span class="text-sm font-body block">24 Route de Noizay, 37530 Nazelles</span>
 		</a>
-		<div class="mt-6 sm:mt-0 flex sm:items-center justify-center sm:justify-end sm:col-span-6 lg:justify-center lg:col-span-2">
+		<div class="mt-6 gap-6 sm:mt-0 flex sm:items-center justify-center sm:justify-end sm:col-span-6 lg:justify-center lg:col-span-2">
 			<a class="button lg:w-full" href="{{ current_url }}/#contact">{{- __( 'Contact', 'le-chateau-des-ormeaux' ) -}}</a>
+
+			<ul class="flex items-center gap-3 lg:hidden">
+				{% for language in pll_the_languages() %}
+					{% if not language.current_lang %}
+						<li>
+							<a aria-label="{{ language.name }}" title="{{ language.name }}" class="{{ html_classes( language.current_lang ? 'is-active' ) }}" href="{{ language.url }}">
+								<img class="w-9 h-auto block" src="{{ theme.manifest[ 'img/svg/flag-' ~ language.slug ~  '.svg' ] }}" alt="">
+							</a>
+						</li>
+					{% endif %}
+				{% endfor %}
+			</ul>
 		</div>
+
+
 		<div class="hidden lg:col-span-5 lg:flex lg:items-center lg:justify-end gap-6">
 			<ul
 				class="flex gap-6 text-lg"
@@ -41,15 +55,13 @@
 			</ul>
 			<ul class="flex items-center gap-3">
 				{% for language in pll_the_languages() %}
-					<li>
-						{% if language.current_lang %}
-							<img class="w-9 h-6 block" title="{{ language.name }}" src="{{ theme.manifest[ 'img/svg/flag-' ~ language.slug ~  '.svg' ] }}" alt="" width="36" height="24">
-						{% else %}
+					{% if not language.current_lang %}
+						<li>
 							<a aria-label="{{ language.name }}" title="{{ language.name }}" class="{{ html_classes( language.current_lang ? 'is-active' ) }}" href="{{ language.url }}">
 								<img class="w-9 h-auto block" src="{{ theme.manifest[ 'img/svg/flag-' ~ language.slug ~  '.svg' ] }}" alt="">
 							</a>
-						{% endif %}
-					</li>
+						</li>
+					{% endif %}
 				{% endfor %}
 			</ul>
 		</div>
